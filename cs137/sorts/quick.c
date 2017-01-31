@@ -52,13 +52,13 @@ int partition (int a[], int n)
 }
 
 /*
- * Time complexity for merge sort
+ * Time complexity for quicksort
  *
  * - Best case: each partitioning yields two equal sized partitions
  *
  * - Average case: is also O (n logn)
  *
- * - if P is in the 25th to 75th percentile, you get 3:1 partition sizes at 
+ * - if P is in the 25th to 75th percentile, you get 3:1 partition sizes at
  *   worst (result in log 4/3 n)
  *
  * - Worst case: P is always smallest or largest element

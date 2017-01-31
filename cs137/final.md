@@ -1,0 +1,25 @@
+# Exam
+
+- Closed book
+- No calculators
+- Cummulative
+- 20 questions - 4 marks each
+  - ~40% no code / ~60% functions
+  - eg.
+    - find errors
+    - what does this print?
+    - T/F `O ()`
+    - **Unicode**
+    - pointers
+    - structs
+    - strings
+- Algorithms
+  - Euclid *
+  - Eratosthenes *
+  - Horner's *
+  - Bisection *
+  - Sorting and searching **Understand or memorize**
+   - Selection -> best/worst = O(n^2)/O(n^2) -> space = O(1) *
+   - Insertion -> best/worst = O(n)/O(n^2) -> space = O(1) *
+   - Merge -> best/worst = O(nlogn)/O(nlogn) -> space = O(n) *
+   - Quick -> best/worst = O(nlogn)/O(n^2) -> space = O(n) * // O(logn) with tail call Linear and Binary search
