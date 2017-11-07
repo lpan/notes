@@ -23,9 +23,13 @@ def f() = {
 f() {         // 0
   g() {}      // 1
   h() {       // 1
-    k() {}    // 2
+    k() { return g }    // 2
+    return k()
   }
+  return h()
 }
+
+f() // -> g
 ```
 
 Def static link: the frame of the statically enclosing procedure of the
