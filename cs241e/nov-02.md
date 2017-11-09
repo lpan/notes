@@ -94,19 +94,20 @@ parse(alpha, x) =
 parse(alpha, x) =
   if (alpha.isEmpty) {
     if x.isEmpty return Seq()
-    else return false
+    else return None
   } else if (alpha = aBeta) {
     // x starts with 'a'
-    return x = az && parse(beta, z)
+    if (x = az && parse(beta, z)) return a +: parse(Beta, z)
+    else return None
   } else if (alpha = a) {
     for each (A -> Gamma <- P) {
-      if (parse(Gamma, x)) return true
+      if (parse(Gamma, x)) return parse(Gamma, x)
     }
-    return false
+    return None
   } else {
     for each split x = x1 x2 {
-      if (parse(A1, x1) and parse(Beta, x2)) return true
+      if (parse(A1, x1) and parse(Beta, x2)) return parse(A, x1) ++ parse(Beta, x2)
     }
-    return false
+    return None
   }
 ```
