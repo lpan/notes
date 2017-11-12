@@ -39,7 +39,7 @@ A `context free grammar` is a 4-tuple `V, Sigma, P, S` where
     - `{ ID, +, -, *, /, (, ) }`
   * P is a finite set of production rules
     - `{ expr -> ID, expr -> expr op expr, expr -> ( expr ), op -> +, op -> - }`
-  * s is the start of non-terminal
+  * S is the start of non-terminal
     - `S <- V` (s is an element of V)
     - s is always the root of the parse tree
     - `S = expr`
